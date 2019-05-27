@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:900|Montserrat:900|Open+Sans|Oswald:400,700");
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css"');
+* {
+  box-sizing: border-box;
+  color: #2B2724;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif; }
+
+p {
+  line-height: 2.5rem; }
+
+button {
+  background: white;
+  border: grey;
+  padding: 20px 40px;
+  box-shadow: 0px 2px 5px -1px rgba(117, 117, 117, 0.62); }

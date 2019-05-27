@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Home from './components/index'
 import AuthPage from './components/authPage'
 import BrowsePlants from './components/browsePlants'
-import './App.css';
+import './styles/App.css';
 
 class App extends React.Component {
   constructor(props) {

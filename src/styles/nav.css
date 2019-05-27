@@ -1,0 +1,16 @@
+.logo {
+  margin-right: auto; }
+  .logo a {
+    font-size: 2rem; }
+
+nav, .logo {
+  display: flex; }
+
+.nav {
+  display: flex;
+  width: 100%;
+  align-content: space-between;
+  padding: 40px 50px; }
+
+nav li {
+  margin-left: 25px; }
