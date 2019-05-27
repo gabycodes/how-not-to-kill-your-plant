@@ -8,7 +8,7 @@
   width: 50vw;
   text-align: center;
   border: none;
-  padding: 15px;
+  padding: 17px 15px;
   margin: 50px auto 25px;
   box-shadow: rgba(117, 117, 117, 0.62) 0px 3px 6px -3px; }
 
@@ -17,7 +17,7 @@
   width: 50vw;
   margin: 0 auto;
   display: flex;
-  padding: 25px;
+  padding: 30px;
   background-color: white;
   margin-bottom: 30px;
   box-shadow: rgba(117, 117, 117, 0.62) 0px 3px 6px -3px; }
@@ -29,7 +29,7 @@
   overflow: hidden; }
 
 .plantCard .content {
-  margin-left: 25px; }
+  margin-left: 30px; }
 
 h2, h3 {
   margin: 0 auto;
@@ -37,7 +37,7 @@ h2, h3 {
   position: relative; }
 
 h3 {
-  margin: 40px; }
+  margin: 50px; }
 
 h4 {
   font-size: 3.25rem;
@@ -49,10 +49,10 @@ h3::before, h3::after {
   top: calc(50% - 1px);
   background-color: #2B2724;
   height: 1px;
-  min-width: 230px; }
+  min-width: 220px; }
 
 h3::before {
-  left: calc(50% - 295px); }
+  left: calc(50% - 280px); }
 
 h3::after {
-  right: calc(50% - 295px); }
+  right: calc(50% - 280px); }

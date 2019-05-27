@@ -9,7 +9,6 @@ import data from './sampleData'
 class BrowsePlants extends React.Component {
   constructor(props) {
     super(props);
-
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -19,10 +18,27 @@ class BrowsePlants extends React.Component {
 
   handleChange(event) {
     this.setState({value: event.target.value});
+    
+    const query = this.state.value.toUpperCase()
+    const searchResults = data.filter(plant => {
+      if (plant.name.toUpperCase().includes(query)) {
+        return true
+      }
+      return false
+    })
+
+    this.setState({ searchResults })
+    
+    console.log(searchResults)
+    console.log({query})
+    if (query === '') {
+      this.setState({ data })
+    }
   }
 
   state = {
-    value: ''
+    value: '',
+    searchResults: data
   }
 
   render() {
@@ -36,7 +52,7 @@ class BrowsePlants extends React.Component {
           </form>
           <h3>Results</h3>
           <div className="resultsHolder">
-            {data.map(plant => {
+            {this.state.searchResults.map(plant => {
             return (
               <React.Fragment>
                 <PlantCard plant={plant} key={plant.id} />

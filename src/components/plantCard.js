@@ -19,7 +19,7 @@ class PlantCard extends React.Component {
         </div>
         <div className="content">
           <h4>{name}</h4>
-          <p>{truncate(description, 25, '...')}</p>
+          <p>{truncate(description, 20, '...')}</p>
           <a href="#">Open plant bio</a>
         </div>
       </div>

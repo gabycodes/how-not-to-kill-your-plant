@@ -14,7 +14,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer>
-        <a href="/">Made with ♡ by Gaby Küpfer</a>
+        <a href="/">Made with ♥ by Gaby Küpfer</a>
         <div className="socialLinks">
           <a href="/">
             {/* <FontAwesomeIcon icon="stroopwafel" /> */}
