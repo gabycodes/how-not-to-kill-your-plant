@@ -10,7 +10,7 @@
   padding: 0; }
 
 .home h2 {
-  margin-top: 0; }
+  margin: 0; }
 
 .backgroundImg {
   background-size: cover;
@@ -34,16 +34,11 @@
 .text:nth-of-type(4) {
   background: #FB9086; }
 
-.br {
-  display: block;
-  font-size: 3rem;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400; }
-
 .accentWord {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: normal;
   color: #FB9086;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Amiri", sans-serif; }
 
-.text p:last-of-type {
-  margin-bottom: 25px; }
+.text p {
+  margin: 30px 0 35px; }

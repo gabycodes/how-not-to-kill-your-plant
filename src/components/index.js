@@ -18,9 +18,8 @@ class Home extends React.Component {
         <div className="blocksContainer">
           <div className='block text'>
             <div className="noFlex">
-              <h2><span className='br'>this is</span>How <span className="accentWord">not</span> to kill your plant.</h2>
+              <h2>How <span className="accentWord">not</span> to kill your plant.</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dicta ducimus dignissimos facere modi necessitatibus nihil adipisci assumenda quis, tempora eligendi, explicabo quas repudiandae amet?</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex labore libero quia quaerat laboriosam vero!</p>
               <button>Browse Plant Library</button>
             </div>
           </div>

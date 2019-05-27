@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:900|Montserrat:900|Open+Sans|Oswald:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:900|Montserrat:900|Open+Sans|Oswald:400,700|Playfair+Display|Amiri");
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css"');
 html {
   line-height: 1.15;
@@ -319,7 +319,8 @@ body {
   padding: 0; }
 
 img {
-  max-width: 100%; }
+  width: 100%;
+  display: inline-block; }
 
 ul {
   padding: 0; }
@@ -330,9 +331,16 @@ li {
 a {
   text-decoration: none; }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Amiri', serif;
+  font-weight: normal; }
+
 h2 {
-  font-size: 4rem;
-  font-family: 'Oswald', sans-serif; }
+  font-size: 5rem;
+  line-height: 5rem; }
+
+h3 {
+  font-size: 3rem; }
 
 p {
   line-height: 2.5rem; }
@@ -356,7 +364,8 @@ nav, .logo {
   display: flex;
   width: 100%;
   align-content: space-between;
-  padding: 40px 50px; }
+  padding: 40px 50px;
+  background: white; }
 
 nav li {
   margin-left: 25px; }
@@ -373,7 +382,7 @@ nav li {
   padding: 0; }
 
 .home h2 {
-  margin-top: 0; }
+  margin: 0; }
 
 .backgroundImg {
   background-size: cover;
@@ -397,19 +406,73 @@ nav li {
 .text:nth-of-type(4) {
   background: #FB9086; }
 
-.br {
-  display: block;
-  font-size: 3rem;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400; }
-
 .accentWord {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: normal;
   color: #FB9086;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Amiri", sans-serif; }
 
-.text p:last-of-type {
-  margin-bottom: 25px; }
+.text p {
+  margin: 30px 0 35px; }
+
+.browsePlants {
+  background: #FCF7F4;
+  padding: 60px; }
+
+.browsePlants input {
+  display: block;
+  min-width: 650px;
+  width: 50vw;
+  text-align: center;
+  border: none;
+  padding: 15px;
+  margin: 50px auto 25px;
+  box-shadow: rgba(117, 117, 117, 0.62) 0px 3px 6px -3px; }
+
+.plantCard {
+  min-width: 650px;
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  padding: 25px;
+  background-color: white;
+  margin-bottom: 30px;
+  box-shadow: rgba(117, 117, 117, 0.62) 0px 3px 6px -3px; }
+
+.plantCard .imgHolder {
+  width: 175px;
+  height: 175px;
+  flex: none;
+  overflow: hidden; }
+
+.plantCard .content {
+  margin-left: 25px; }
+
+h2, h3 {
+  margin: 0 auto;
+  text-align: center;
+  position: relative; }
+
+h3 {
+  margin: 40px; }
+
+h4 {
+  font-size: 3.25rem;
+  margin: 0; }
+
+h3::before, h3::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 1px);
+  background-color: #2B2724;
+  height: 1px;
+  min-width: 230px; }
+
+h3::before {
+  left: calc(50% - 295px); }
+
+h3::after {
+  right: calc(50% - 295px); }
 
 footer {
   background: #2B2724;

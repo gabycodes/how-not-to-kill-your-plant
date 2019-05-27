@@ -1,0 +1,71 @@
+.browsePlants {
+  background: #FCF7F4;
+  padding: 60px;
+
+  input {
+    display: block;
+    min-width: 650px;
+    width: 50vw;
+    text-align: center;
+    border: none;
+    padding: 15px;
+    margin: 50px auto 25px;
+    box-shadow: rgba(117, 117, 117, 0.62) 0px 3px 6px -3px;
+  }
+}
+
+.plantCard {
+  min-width: 650px;
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  padding: 25px;
+  background-color: white;
+  margin-bottom: 30px;
+  box-shadow: rgba(117, 117, 117, 0.62) 0px 3px 6px -3px;
+
+  .imgHolder {
+    // width: 30%;
+    // max-height: 30%;
+    width: 175px;
+    height: 175px;
+    flex: none;
+    overflow: hidden;
+  }
+
+  .content {
+    margin-left: 25px;
+  }
+}
+
+h2, h3 {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+  margin: 40px;
+}
+
+h4 {
+  font-size: 3.25rem;
+  margin: 0;
+}
+
+h3::before, h3::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 1px);
+  background-color: #2B2724;
+  height: 1px;
+  min-width: 230px;
+}
+
+h3::before {
+  left: calc(50% - 295px);
+}
+
+h3::after {
+  right: calc(50% - 295px);
+}

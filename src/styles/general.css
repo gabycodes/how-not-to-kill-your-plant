@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:900|Montserrat:900|Open+Sans|Oswald:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:900|Montserrat:900|Open+Sans|Oswald:400,700|Playfair+Display|Amiri");
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css"');
 * {
   box-sizing: border-box;
@@ -14,7 +14,8 @@ body {
   padding: 0; }
 
 img {
-  max-width: 100%; }
+  width: 100%;
+  display: inline-block; }
 
 ul {
   padding: 0; }
@@ -25,9 +26,16 @@ li {
 a {
   text-decoration: none; }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Amiri', serif;
+  font-weight: normal; }
+
 h2 {
-  font-size: 4rem;
-  font-family: 'Oswald', sans-serif; }
+  font-size: 5rem;
+  line-height: 5rem; }
+
+h3 {
+  font-size: 3rem; }
 
 p {
   line-height: 2.5rem; }

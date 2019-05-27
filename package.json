@@ -8,7 +8,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "sugar": "^2.0.6"
   },
   "scripts": {
     "build-css": "node-sass --include-path ./src/styles --include-path ./node_modules src/styles/ -o src/styles/",
