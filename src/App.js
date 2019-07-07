@@ -12,9 +12,20 @@ class App extends React.Component {
       currentPage: '',
       userAuth: false,
       userEmail: '',
+      apiResponse: '',
     }
   }
   
+  callAPI() {
+    fetch("http://localhost:9000/testAPI")
+      .then(res => res.text())
+      .then(res => this.setState({ apiResponse: res }));
+  }
+
+  componentWillMount() {
+    this.callAPI();
+  }
+
   render() {
     return (
       <div className="App">
@@ -26,8 +37,9 @@ class App extends React.Component {
           {/* <Route exact path="/app" render={(props) => (
             <UserInputPage {...props} token={this.state.accessToken} handleChange={this.handleChange} handleSubmit={this.handleSubmit} userLocation={this.state.userLocation} sliceRestaurants={this.state.restaurantList} loading={this.state.isLoading} header={this.state.header} noSlice={this.state.noSlice} setOffset={this.setOffset} offset={this.state.apiOffset} />
           )}/> */}
-				</Switch>
+				  </Switch>
         </Router>
+        <p className="App-intro">;{this.state.apiResponse}</p>
       </div>
     );
   }
